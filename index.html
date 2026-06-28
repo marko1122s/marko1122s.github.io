@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio von Marko Trajkovski – Web Developer und IT- & Business-Absolvent aus Wien. Technologie trifft Wirtschaft." />
+  <meta name="author" content="Marko Trajkovski" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marko Trajkovski – Web Developer | IT & Business Graduate" />
+  <meta property="og:description" content="Ich verbinde Technologie und Wirtschaft, um strukturierte, benutzerfreundliche und praxisnahe digitale Lösungen zu entwickeln." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Marko Trajkovski – Web Developer | IT & Business Graduate</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Startseite">
+        <span class="nav__logo">MT</span>
+        <span class="nav__name">Marko Trajkovski</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="#about" class="nav__link">Über mich</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projekte</a>
+        <a href="#cv" class="nav__link">Lebenslauf</a>
+        <a href="#contact" class="nav__link">Kontakt</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln / Switch language" title="Deutsch / English">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten" title="Dark / Light umschalten">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 17a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.42 0l.7.7A1 1 0 0 1 4.92 6.34l-.7-.7a1 1 0 0 1 0-1.42zm12.73 12.73a1 1 0 0 1 1.42 0l.7.7a1 1 0 1 1-1.42 1.42l-.7-.7a1 1 0 0 1 0-1.42zM2 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm18 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zM4.22 19.78a1 1 0 0 1 0-1.42l.7-.7a1 1 0 0 1 1.42 1.42l-.7.7a1 1 0 0 1-1.42 0zM16.95 7.05a1 1 0 0 1 0-1.42l.7-.7a1 1 0 1 1 1.42 1.42l-.7.7a1 1 0 0 1-1.42 0z"/></svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge reveal">
+            <span class="hero__badge-dot"></span> Verfügbar für Junior-Positionen & Praktika
+          </span>
+          <h1 class="hero__title reveal">Marko Trajkovski</h1>
+          <p class="hero__role reveal">Web Developer <span class="sep">|</span> IT &amp; Business Graduate</p>
+          <p class="hero__subtitle reveal">
+            Ich verbinde Technologie und Wirtschaft, um strukturierte, benutzerfreundliche
+            und praxisnahe digitale Lösungen zu entwickeln.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">Projekte ansehen</a>
+            <a href="#contact" class="btn btn--ghost">Kontakt aufnehmen</a>
+            <a href="assets/Marko_Trajkovski_Lebenslauf.pdf" class="btn btn--ghost" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+              Lebenslauf
+            </a>
+          </div>
+
+          <div class="hero__meta reveal">
+            <span><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Wien, Österreich</span>
+            <span><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M22 12A10 10 0 1 1 12 2a10 10 0 0 1 10 10zm-11-5v6l5 3 .75-1.23-4.25-2.52V7z"/></svg> HAK – IT &amp; Wirtschaft</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__photo">
+            <img src="assets/images/profile.jpg" alt="Profilbild von Marko Trajkovski" width="608" height="760" loading="eager" />
+            <div class="hero__photo-ring" aria-hidden="true"></div>
+          </div>
+          <div class="hero__chip hero__chip--1">&lt;/&gt; Clean Code</div>
+          <div class="hero__chip hero__chip--2">SQL · PHP · C#</div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Nach unten scrollen">
+        <span class="hero__mouse"></span>
+      </a>
+    </section>
+
+    <!-- ===== Über mich ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">01 — Über mich</span>
+          <h2 class="section__title">Technisch versiert. Wirtschaftlich denkend.</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Ich bin Absolvent der Handelsakademie (HAK) mit Schwerpunkt
+              <strong>IT &amp; Wirtschaft</strong> aus Wien. Meine Ausbildung verbindet
+              technisches Know-how mit betriebswirtschaftlichem Verständnis – eine
+              Kombination, die mir hilft, Probleme strukturiert zu analysieren und
+              praxisnahe Lösungen zu entwickeln.
+            </p>
+            <p>
+              Mein besonderes Interesse gilt der <strong>Softwareentwicklung</strong>,
+              <strong>Webentwicklung</strong>, <strong>Datenbanken</strong> und der
+              <strong>Wirtschaftsinformatik</strong>. In mehreren praxisorientierten
+              Projekten habe ich gelernt, Anforderungen zu durchdenken, sauberen Code zu
+              schreiben und Ergebnisse verständlich zu präsentieren.
+            </p>
+
+            <ul class="about__tags">
+              <li>Motivierter Berufseinsteiger</li>
+              <li>Strukturierter Problemlöser</li>
+              <li>Analytischer Denker</li>
+              <li>Lernbereit &amp; wissbegierig</li>
+            </ul>
+          </div>
+
+          <ol class="timeline reveal">
+            <li class="timeline__item">
+              <span class="timeline__dot"></span>
+              <span class="timeline__year">Start</span>
+              <h3 class="timeline__title">HAK – Beginn</h3>
+              <p class="timeline__desc">Einstieg in die Handelsakademie mit Schwerpunkt IT &amp; Wirtschaft.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot"></span>
+              <span class="timeline__year">Entwicklung</span>
+              <h3 class="timeline__title">Erste Programmiererfahrungen</h3>
+              <p class="timeline__desc">Web- &amp; Softwareentwicklung, Datenbanken und objektorientierte Programmierung.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot"></span>
+              <span class="timeline__year">Projekt</span>
+              <h3 class="timeline__title">Diplomarbeitsprojekt</h3>
+              <p class="timeline__desc">Umsetzung eines praxisnahen, webbasierten Projekts im Team.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot"></span>
+              <span class="timeline__year">Abschluss</span>
+              <h3 class="timeline__title">Maturaabschluss</h3>
+              <p class="timeline__desc">Erfolgreicher Abschluss der HAK – bereit für den nächsten Schritt.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">02 — Skills</span>
+          <h2 class="section__title">Werkzeuge &amp; Kompetenzen</h2>
+          <p class="section__lead">Ein Überblick über meine technischen und wirtschaftlichen Fähigkeiten.</p>
+        </div>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">&lt;/&gt;</span>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>HTML</span><i class="bar" style="--lvl:90%"></i></li>
+              <li><span>CSS</span><i class="bar" style="--lvl:85%"></i></li>
+              <li><span>JavaScript</span><i class="bar" style="--lvl:75%"></i></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">{ }</span>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>PHP</span><i class="bar" style="--lvl:75%"></i></li>
+              <li><span>C#</span><i class="bar" style="--lvl:70%"></i></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">▤</span>
+              <h3>Datenbanken</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>MySQL</span><i class="bar" style="--lvl:80%"></i></li>
+              <li><span>MariaDB</span><i class="bar" style="--lvl:78%"></i></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">⚙</span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="skill-chips">
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>WordPress</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__head">
+              <span class="skill-card__icon">📊</span>
+              <h3>Business</h3>
+            </div>
+            <ul class="skill-chips">
+              <li>Projektmanagement</li>
+              <li>Prozessanalyse</li>
+              <li>Betriebswirtschaft</li>
+              <li>Datenanalyse</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projekte ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">03 — Projekte</span>
+          <h2 class="section__title">Ausgewählte Projekte</h2>
+          <p class="section__lead">Praxisnahe Arbeiten mit interaktiven Mini-Demos – probier sie direkt aus.</p>
+        </div>
+
+        <div class="projects" id="projectsGrid">
+          <!-- Projekt 1: MoveCheck -->
+          <article class="project project--featured reveal" data-project="movecheck">
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__title">MoveCheck</h3>
+                <span class="status status--live">Abgeschlossen</span>
+              </div>
+              <p class="project__desc">
+                Webbasierte Administrationsoberfläche zur Analyse von Nutzerfeedback
+                im öffentlichen Verkehr – mit Dashboard, Datenvisualisierung und KPI-Auswertung.
+              </p>
+              <ul class="project__tech">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm js-demo" data-demo="movecheck">Demo</button>
+                <button class="btn btn--ghost btn--sm js-details" data-details="movecheck">Details</button>
+              </div>
+            </div>
+
+            <!-- Inline Demo: Dashboard -->
+            <div class="demo" id="demo-movecheck" hidden>
+              <div class="demo__bar">
+                <span class="demo__dots"><i></i><i></i><i></i></span>
+                <span class="demo__label">MoveCheck · Admin Dashboard</span>
+              </div>
+              <div class="dash">
+                <div class="dash__stats">
+                  <div class="stat">
+                    <span class="stat__label">Feedback gesamt</span>
+                    <span class="stat__value" data-count="1284">0</span>
+                    <span class="stat__trend up">▲ 12%</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Ø Bewertung</span>
+                    <span class="stat__value" data-count="42" data-suffix="" data-decimal="true">0</span>
+                    <span class="stat__trend up">▲ 0.3</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Offene Tickets</span>
+                    <span class="stat__value" data-count="37">0</span>
+                    <span class="stat__trend down">▼ 8%</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Gelöst</span>
+                    <span class="stat__value" data-count="96" data-suffix="%">0</span>
+                    <span class="stat__trend up">▲ 4%</span>
+                  </div>
+                </div>
+
+                <div class="dash__chart">
+                  <div class="dash__chart-head">
+                    <span>Feedback pro Linie</span>
+                    <span class="muted">letzte 6 Wochen</span>
+                  </div>
+                  <div class="chart" aria-hidden="true">
+                    <div class="chart__bar" style="--h:55%"><span>U1</span></div>
+                    <div class="chart__bar" style="--h:78%"><span>U2</span></div>
+                    <div class="chart__bar" style="--h:40%"><span>U3</span></div>
+                    <div class="chart__bar" style="--h:92%"><span>U4</span></div>
+                    <div class="chart__bar" style="--h:63%"><span>U6</span></div>
+                    <div class="chart__bar" style="--h:48%"><span>D</span></div>
+                  </div>
+                </div>
+
+                <table class="dtable">
+                  <thead>
+                    <tr><th>Linie</th><th>Kategorie</th><th>Status</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>U4</td><td>Sauberkeit</td><td><span class="pill pill--warn">In Bearbeitung</span></td></tr>
+                    <tr><td>U2</td><td>Pünktlichkeit</td><td><span class="pill pill--ok">Gelöst</span></td></tr>
+                    <tr><td>D</td><td>Information</td><td><span class="pill pill--open">Offen</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 2: Finanzcontrolling -->
+          <article class="project reveal" data-project="finance">
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__title">Finanzcontrolling-System</h3>
+                <span class="status status--live">Privatprojekt</span>
+              </div>
+              <p class="project__desc">
+                System zur Verwaltung von Abonnements, Zahlungen und offenen Beträgen –
+                mit Kostenübersicht, Zahlungsstatus und Auswertungen.
+              </p>
+              <ul class="project__tech">
+                <li>JavaScript</li><li>Datenanalyse</li><li>Excel</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm js-demo" data-demo="finance">Demo</button>
+                <button class="btn btn--ghost btn--sm js-details" data-details="finance">Details</button>
+              </div>
+            </div>
+
+            <div class="demo" id="demo-finance" hidden>
+              <div class="demo__bar">
+                <span class="demo__dots"><i></i><i></i><i></i></span>
+                <span class="demo__label">Finanzcontrolling · Zahlungen</span>
+              </div>
+              <div class="fin">
+                <div class="fin__filters">
+                  <button class="chip-btn is-active" data-filter="all">Alle</button>
+                  <button class="chip-btn" data-filter="paid">Bezahlt</button>
+                  <button class="chip-btn" data-filter="open">Offen</button>
+                  <span class="fin__sum">Offen: <strong id="finOpen">€ 0</strong></span>
+                </div>
+                <table class="dtable dtable--fin">
+                  <thead>
+                    <tr><th>Leistung</th><th>Betrag</th><th>Fällig</th><th>Status</th></tr>
+                  </thead>
+                  <tbody id="finBody">
+                    <tr data-state="paid"><td>Streaming-Abo</td><td>€ 12,99</td><td>01.06.</td><td><span class="pill pill--ok">Bezahlt</span></td></tr>
+                    <tr data-state="open"><td>Cloud-Speicher</td><td>€ 9,99</td><td>15.06.</td><td><span class="pill pill--open">Offen</span></td></tr>
+                    <tr data-state="paid"><td>Musik-Abo</td><td>€ 10,99</td><td>03.06.</td><td><span class="pill pill--ok">Bezahlt</span></td></tr>
+                    <tr data-state="open"><td>Software-Lizenz</td><td>€ 24,90</td><td>20.06.</td><td><span class="pill pill--open">Offen</span></td></tr>
+                    <tr data-state="open"><td>Fitness</td><td>€ 29,90</td><td>28.06.</td><td><span class="pill pill--open">Offen</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 3: Wetter -->
+          <article class="project reveal" data-project="weather">
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__title">Wetter-Webseite</h3>
+                <span class="status status--demo">Demo</span>
+              </div>
+              <p class="project__desc">
+                Webanwendung zur Anzeige aktueller Wetterdaten über externe APIs –
+                mit Standortanzeige und übersichtlicher Darstellung.
+              </p>
+              <ul class="project__tech">
+                <li>JavaScript</li><li>REST API</li><li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm js-demo" data-demo="weather">Demo</button>
+                <button class="btn btn--ghost btn--sm js-details" data-details="weather">Details</button>
+              </div>
+            </div>
+
+            <div class="demo" id="demo-weather" hidden>
+              <div class="demo__bar">
+                <span class="demo__dots"><i></i><i></i><i></i></span>
+                <span class="demo__label">Wetter · Live-Mockup</span>
+              </div>
+              <div class="weather">
+                <div class="weather__main">
+                  <div class="weather__loc">
+                    <span class="weather__city" id="wxCity">Wien</span>
+                    <span class="muted">Heute · leicht bewölkt</span>
+                  </div>
+                  <div class="weather__temp">
+                    <span class="weather__icon">⛅</span>
+                    <span class="weather__deg" id="wxTemp">21°</span>
+                  </div>
+                </div>
+                <div class="weather__grid">
+                  <div class="wx-cell"><span class="muted">Wind</span><strong>14 km/h</strong></div>
+                  <div class="wx-cell"><span class="muted">Luftfeucht.</span><strong>56%</strong></div>
+                  <div class="wx-cell"><span class="muted">Gefühlt</span><strong>20°</strong></div>
+                </div>
+                <div class="weather__week" id="wxWeek"></div>
+                <button class="chip-btn" id="wxSwitch">Stadt wechseln</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 4: Datenbank -->
+          <article class="project reveal" data-project="db">
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__title">Datenbank-Projekte</h3>
+                <span class="status status--live">Abgeschlossen</span>
+              </div>
+              <p class="project__desc">
+                Konzeption und Umsetzung relationaler Datenbanken – inklusive ERD,
+                SQL-Abfragen und durchdachter Datenmodellierung.
+              </p>
+              <ul class="project__tech">
+                <li>MySQL</li><li>MariaDB</li><li>SQL</li><li>ERD</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm js-demo" data-demo="db">Demo</button>
+                <button class="btn btn--ghost btn--sm js-details" data-details="db">Details</button>
+              </div>
+            </div>
+
+            <div class="demo" id="demo-db" hidden>
+              <div class="demo__bar">
+                <span class="demo__dots"><i></i><i></i><i></i></span>
+                <span class="demo__label">Datenmodell · ERD</span>
+              </div>
+              <div class="erd">
+                <svg viewBox="0 0 460 230" class="erd__svg" role="img" aria-label="Entity-Relationship-Diagramm">
+                  <line x1="130" y1="70" x2="230" y2="70" class="erd__rel"/>
+                  <line x1="330" y1="70" x2="330" y2="150" class="erd__rel"/>
+                  <line x1="230" y1="160" x2="330" y2="120" class="erd__rel"/>
+                  <g class="erd__table">
+                    <rect x="20" y="40" width="110" height="90" rx="8"/>
+                    <text x="75" y="60" class="erd__t">Kunde</text>
+                    <text x="32" y="82" class="erd__f">PK id</text>
+                    <text x="32" y="100" class="erd__f">name</text>
+                    <text x="32" y="118" class="erd__f">email</text>
+                  </g>
+                  <g class="erd__table">
+                    <rect x="230" y="30" width="110" height="90" rx="8"/>
+                    <text x="285" y="50" class="erd__t">Bestellung</text>
+                    <text x="242" y="72" class="erd__f">PK id</text>
+                    <text x="242" y="90" class="erd__f">FK kunde</text>
+                    <text x="242" y="108" class="erd__f">datum</text>
+                  </g>
+                  <g class="erd__table">
+                    <rect x="285" y="150" width="110" height="70" rx="8"/>
+                    <text x="340" y="170" class="erd__t">Produkt</text>
+                    <text x="297" y="192" class="erd__f">PK id</text>
+                    <text x="297" y="210" class="erd__f">preis</text>
+                  </g>
+                </svg>
+                <pre class="erd__sql"><code><span class="kw">SELECT</span> k.name, <span class="fn">COUNT</span>(b.id) <span class="kw">AS</span> bestellungen
+<span class="kw">FROM</span> Kunde k
+<span class="kw">JOIN</span> Bestellung b <span class="kw">ON</span> b.kunde = k.id
+<span class="kw">GROUP BY</span> k.name
+<span class="kw">ORDER BY</span> bestellungen <span class="kw">DESC</span>;</code></pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projekt 5: C# -->
+          <article class="project reveal" data-project="csharp">
+            <div class="project__body">
+              <div class="project__top">
+                <h3 class="project__title">C#-Anwendungen</h3>
+                <span class="status status--demo">Lernprojekte</span>
+              </div>
+              <p class="project__desc">
+                Verschiedene Softwareprojekte zur Vertiefung objektorientierter
+                Programmierung – mit Datenverwaltung und Benutzeroberflächen.
+              </p>
+              <ul class="project__tech">
+                <li>C#</li><li>.NET</li><li>OOP</li><li>Visual Studio</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm js-demo" data-demo="csharp">Demo</button>
+                <button class="btn btn--ghost btn--sm js-details" data-details="csharp">Details</button>
+              </div>
+            </div>
+
+            <div class="demo" id="demo-csharp" hidden>
+              <div class="demo__bar">
+                <span class="demo__dots"><i></i><i></i><i></i></span>
+                <span class="demo__label">Desktop-App · Mockup</span>
+              </div>
+              <div class="winapp">
+                <div class="winapp__title">
+                  <span>Lagerverwaltung.exe</span>
+                  <span class="winapp__btns"><i>—</i><i>▢</i><i>✕</i></span>
+                </div>
+                <div class="winapp__menu"><span>Datei</span><span>Bearbeiten</span><span>Ansicht</span><span>Hilfe</span></div>
+                <div class="winapp__content">
+                  <aside class="winapp__side">
+                    <span class="is-active">▦ Übersicht</span>
+                    <span>＋ Artikel</span>
+                    <span>⇄ Buchungen</span>
+                    <span>⚙ Einstellungen</span>
+                  </aside>
+                  <div class="winapp__panel">
+                    <div class="winapp__row"><span>Artikel #1042</span><span>Lager: 128</span></div>
+                    <div class="winapp__row"><span>Artikel #1043</span><span>Lager: 12</span></div>
+                    <div class="winapp__row winapp__row--low"><span>Artikel #1044</span><span>Lager: 3 ⚠</span></div>
+                    <div class="winapp__row"><span>Artikel #1045</span><span>Lager: 76</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Lebenslauf ===== -->
+    <section class="section section--alt" id="cv">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">04 — Lebenslauf</span>
+          <h2 class="section__title">Kurzprofil &amp; Werdegang</h2>
+        </div>
+
+        <div class="cv">
+          <div class="cv__intro reveal">
+            <p>
+              Strukturierter, lernbereiter Absolvent mit Schwerpunkt IT &amp; Wirtschaft.
+              Auf der Suche nach einer Junior-Position oder einem Praktikum, in dem ich
+              technisches Können und wirtschaftliches Denken einbringen und ausbauen kann.
+            </p>
+            <a href="assets/Marko_Trajkovski_Lebenslauf.pdf" class="btn btn--primary" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+              Lebenslauf herunterladen (PDF)
+            </a>
+          </div>
+
+          <div class="cv__cols">
+            <div class="cv__block reveal">
+              <h3>Ausbildung</h3>
+              <ul class="cv__list">
+                <li><strong>Handelsakademie (HAK)</strong><span>Schwerpunkt IT &amp; Wirtschaft · Matura</span></li>
+                <li><strong>Diplomarbeitsprojekt</strong><span>Webbasiertes Praxisprojekt im Team</span></li>
+              </ul>
+            </div>
+            <div class="cv__block reveal">
+              <h3>Kenntnisse</h3>
+              <ul class="cv__list">
+                <li><strong>Entwicklung</strong><span>HTML, CSS, JavaScript, PHP, C#</span></li>
+                <li><strong>Datenbanken</strong><span>MySQL, MariaDB, SQL, ERD</span></li>
+                <li><strong>Tools</strong><span>Git, Docker, VS Code, Visual Studio</span></li>
+                <li><strong>Wirtschaft</strong><span>Projektmanagement, BWL, Datenanalyse</span></li>
+              </ul>
+            </div>
+            <div class="cv__block reveal">
+              <h3>Interessen</h3>
+              <ul class="cv__list">
+                <li><strong>Softwareentwicklung</strong><span>Saubere, wartbare Lösungen</span></li>
+                <li><strong>Webentwicklung</strong><span>Moderne, benutzerfreundliche Interfaces</span></li>
+                <li><strong>Wirtschaftsinformatik</strong><span>Schnittstelle Technik &amp; Business</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Kontakt ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">05 — Kontakt</span>
+          <h2 class="section__title">Lassen Sie uns sprechen</h2>
+          <p class="section__lead">Offen für Junior-Positionen, Praktika und Studienmöglichkeiten.</p>
+        </div>
+
+        <div class="contact">
+          <form class="contact__form reveal" id="contactForm" novalidate
+                action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms: kostenlosen Access Key auf https://web3forms.com holen und hier einsetzen -->
+            <input type="hidden" name="access_key" value="ece3f152-15c7-495b-bab6-b5b9b943fc94" />
+            <input type="hidden" name="subject" value="Neue Nachricht über dein Portfolio" />
+            <input type="hidden" name="from_name" value="Portfolio Marko Trajkovski" />
+            <!-- Honeypot gegen Spam -->
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
+                   style="position:absolute;left:-9999px" aria-hidden="true" />
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Ihr Name" />
+            </div>
+            <div class="field">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="name@beispiel.com" />
+            </div>
+            <div class="field">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Ihre Nachricht …"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Nachricht senden</button>
+            <p class="contact__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__side reveal">
+            <h3>Direkt erreichen</h3>
+            <ul class="contact__links">
+              <li>
+                <a href="mailto:marko.trajkovski2510@gmail.com">
+                  <span class="contact__ic">✉</span>
+                  <span><strong>E-Mail</strong><em>marko.trajkovski2510@gmail.com</em></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/marko1122s" target="_blank" rel="noopener">
+                  <span class="contact__ic">&lt;&gt;</span>
+                  <span><strong>GitHub</strong><em>github.com/marko1122s</em></span>
+                </a>
+              </li>
+            </ul>
+            <p class="contact__loc">📍 Wien, Österreich</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">MT</span>
+        <div>
+          <strong>Marko Trajkovski</strong>
+          <span class="muted">Wien, Österreich</span>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer-Navigation">
+        <a href="#about">Über mich</a>
+        <a href="#projects">Projekte</a>
+        <a href="#cv">Lebenslauf</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/marko1122s" target="_blank" rel="noopener" aria-label="GitHub">&lt;&gt;</a>
+        <a href="mailto:marko.trajkovski2510@gmail.com" aria-label="E-Mail">✉</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Marko Trajkovski. Alle Rechte vorbehalten.</span>
+      <span class="muted">Erstellt mit HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </footer>
+
+  <!-- ===== Projekt-Detail Modal ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay js-close-modal"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close js-close-modal" aria-label="Schließen">✕</button>
+      <span class="modal__tag" id="modalTag"></span>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <div class="modal__grid" id="modalGrid"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
